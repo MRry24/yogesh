@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yogesh R - Mechanical Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Yogesh R, a Mechanical Engineering student specializing in CAD design, topology optimization, and automotive systems.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <header class="navbar">
+        <nav class="nav-container">
+            <div class="nav-content">
+                <div class="logo">
+                    <span>Yogesh R</span>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#education" class="nav-link">Education</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#education" class="mobile-nav-link">Education</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Yogesh R</h1>
+                    <p class="hero-subtitle">Mechanical Engineering Student</p>
+                    <p class="hero-description">
+                        Passionate about innovative design solutions and advanced CAD modeling. Currently pursuing my Bachelor of Technology in Mechanical Engineering at Kalasalingam Academy of Research and Education, building upon my strong foundation from a Diploma in Automobile Engineering.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" onclick="scrollToSection('#projects')">View My Work</button>
+                        <button class="btn btn-outline" onclick="downloadResume()">
+                            📥 Download Resume
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-container">
+                        <img src="assets/profile.jpg" alt="Yogesh R - Mechanical Engineering Student" class="profile-image">
+                        <div class="floating-icon floating-icon-1">🔧</div>
+                        <div class="floating-icon floating-icon-2">📐</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>A dedicated mechanical engineering student with a passion for innovation and problem-solving</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/profile.jpg" alt="Yogesh R - Mechanical Engineering Student" class="about-img">
+                </div>
+                
+                <div class="about-text">
+                    <h3>Mechanical Engineering Student</h3>
+                    <p>I am currently pursuing my Bachelor of Technology in Mechanical Engineering at Kalasalingam Academy of Research and Education, building upon my strong foundation from a Diploma in Automobile Engineering. My academic journey combines theoretical knowledge with hands-on project experience.</p>
+                    <p>My expertise lies in CAD design, topology optimization, and automotive systems. I've worked on projects ranging from robotic arm optimization to V6 engine design, and actively contribute as Vice Captain of our electric bike racing team.</p>
+                    
+                    <div class="stats">
+                        <div class="stat">
+                            <div class="stat-number">4+</div>
+                            <div class="stat-label">Projects Completed</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">8.45</div>
+                            <div class="stat-label">Current CGPA</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2>Technical Skills</h2>
+                <p>Proficient in various engineering tools and technologies with intermediate to advanced capabilities</p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">📦</span>
+                        <h3>CAD Design</h3>
+                    </div>
+                    <div class="skill-progress-list">
+                        <div class="skill-item" data-testid="skill-solidworks">
+                            <div class="skill-info">
+                                <div class="skill-name-wrapper">
+                                    <span data-testid="text-skill-name-solidworks">SolidWorks</span>
+                                    <span class="proficiency-badge expert" data-testid="badge-proficiency-solidworks">Expert</span>
+                                </div>
+                                <span class="skill-percentage" data-testid="text-percentage-solidworks">85%</span>
+                            </div>
+                            <div class="progress-bar" data-testid="progress-solidworks">
+                                <div class="progress-fill" data-percentage="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-autocad">
+                            <div class="skill-info">
+                                <div class="skill-name-wrapper">
+                                    <span data-testid="text-skill-name-autocad">AutoCAD</span>
+                                    <span class="proficiency-badge advanced" data-testid="badge-proficiency-autocad">Advanced</span>
+                                </div>
+                                <span class="skill-percentage" data-testid="text-percentage-autocad">80%</span>
+                            </div>
+                            <div class="progress-bar" data-testid="progress-autocad">
+                                <div class="progress-fill" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-fusion-360">
+                            <div class="skill-info">
+                                <div class="skill-name-wrapper">
+                                    <span data-testid="text-skill-name-fusion-360">Fusion 360</span>
+                                    <span class="proficiency-badge advanced" data-testid="badge-proficiency-fusion-360">Advanced</span>
+                                </div>
+                                <span class="skill-percentage" data-testid="text-percentage-fusion-360">75%</span>
+                            </div>
+                            <div class="progress-bar" data-testid="progress-fusion-360">
+                                <div class="progress-fill" data-percentage="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">📈</span>
+                        <h3>Analysis & Simulation</h3>
+                    </div>
+                    <div class="skill-progress-list">
+                        <div class="skill-item" data-testid="skill-ansys">
+                            <div class="skill-info">
+                                <div class="skill-name-wrapper">
+                                    <span data-testid="text-skill-name-ansys">ANSYS</span>
+                                    <span class="proficiency-badge intermediate" data-testid="badge-proficiency-ansys">Intermediate</span>
+                                </div>
+                                <span class="skill-percentage" data-testid="text-percentage-ansys">70%</span>
+                            </div>
+                            <div class="progress-bar" data-testid="progress-ansys">
+                                <div class="progress-fill" data-percentage="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-matlab">
+                            <div class="skill-info">
+                                <div class="skill-name-wrapper">
+                                    <span data-testid="text-skill-name-matlab">MATLAB</span>
+                                    <span class="proficiency-badge advanced" data-testid="badge-proficiency-matlab">Advanced</span>
+                                </div>
+                                <span class="skill-percentage" data-testid="text-percentage-matlab">75%</span>
+                            </div>
+                            <div class="progress-bar" data-testid="progress-matlab">
+                                <div class="progress-fill" data-percentage="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-simulink">
+                            <div class="skill-info">
+                                <div class="skill-name-wrapper">
+                                    <span data-testid="text-skill-name-simulink">Simulink</span>
+                                    <span class="proficiency-badge intermediate" data-testid="badge-proficiency-simulink">Intermediate</span>
+                                </div>
+                                <span class="skill-percentage" data-testid="text-percentage-simulink">65%</span>
+                            </div>
+                            <div class="progress-bar" data-testid="progress-simulink">
+                                <div class="progress-fill" data-percentage="65"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">💻</span>
+                        <h3>Programming</h3>
+                    </div>
+                    <div class="skill-progress-list">
+                        <div class="skill-item" data-testid="skill-python">
+                            <div class="skill-info">
+                                <div class="skill-name-wrapper">
+                                    <span data-testid="text-skill-name-python">Python</span>
+                                    <span class="proficiency-badge advanced" data-testid="badge-proficiency-python">Advanced</span>
+                                </div>
+                                <span class="skill-percentage" data-testid="text-percentage-python">80%</span>
+                            </div>
+                            <div class="progress-bar" data-testid="progress-python">
+                                <div class="progress-fill" data-percentage="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-cpp">
+                            <div class="skill-info">
+                                <div class="skill-name-wrapper">
+                                    <span data-testid="text-skill-name-cpp">C++</span>
+                                    <span class="proficiency-badge intermediate" data-testid="badge-proficiency-cpp">Intermediate</span>
+                                </div>
+                                <span class="skill-percentage" data-testid="text-percentage-cpp">70%</span>
+                            </div>
+                            <div class="progress-bar" data-testid="progress-cpp">
+                                <div class="progress-fill" data-percentage="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-testid="skill-labview">
+                            <div class="skill-info">
+                                <div class="skill-name-wrapper">
+                                    <span data-testid="text-skill-name-labview">LabVIEW</span>
+                                    <span class="proficiency-badge intermediate" data-testid="badge-proficiency-labview">Intermediate</span>
+                                </div>
+                                <span class="skill-percentage" data-testid="text-percentage-labview">60%</span>
+                            </div>
+                            <div class="progress-bar" data-testid="progress-labview">
+                                <div class="progress-fill" data-percentage="60"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">🏭</span>
+                        <h3>Manufacturing</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-list-item">✓ 3D Printing</div>
+                        <div class="skill-list-item">✓ CNC Machining</div>
+                        <div class="skill-list-item">✓ Welding Basics</div>
+                        <div class="skill-list-item">✓ Quality Control</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">📊</span>
+                        <h3>Project Management</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-list-item">✓ Team Leadership</div>
+                        <div class="skill-list-item">✓ Documentation</div>
+                        <div class="skill-list-item">✓ Risk Assessment</div>
+                        <div class="skill-list-item">✓ Agile Methodology</div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-header">
+                        <span class="skill-icon">👥</span>
+                        <h3>Soft Skills</h3>
+                    </div>
+                    <div class="skill-list">
+                        <div class="skill-list-item">✓ Problem Solving</div>
+                        <div class="skill-list-item">✓ Critical Thinking</div>
+                        <div class="skill-list-item">✓ Communication</div>
+                        <div class="skill-list-item">✓ Collaboration</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>A showcase of my mechanical engineering projects demonstrating CAD design, analysis, and innovation</p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="assets/robotic-arm.jpg" alt="Topology Optimization in Robotic Arm" class="project-image">
+                    <div class="project-content">
+                        <h3>Topology Optimization in Robotic Arm</h3>
+                        <p>Performed comprehensive topology optimization analysis on robotic arm components achieving 40% weight reduction while maintaining structural integrity and performance requirements.</p>
+                        <div class="project-tags">
+                            <span class="tag tag-purple">Topology Optimization</span>
+                            <span class="tag tag-blue">SolidWorks</span>
+                            <span class="tag tag-blue">FEA</span>
+                            <span class="tag tag-green">Weight Reduction</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-type">Academic Project</span>
+                            <button class="btn-link">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/electric-bike.jpg" alt="Electric Bike Racing Team Leadership" class="project-image">
+                    <div class="project-content">
+                        <h3>Electric Bike Racing Team Leadership</h3>
+                        <p>Vice Captain (2025) and Manager (2024) of electric bike racing team. Led design optimization, team coordination, and strategic planning for competitive electric vehicle racing.</p>
+                        <div class="project-tags">
+                            <span class="tag tag-orange">Team Leadership</span>
+                            <span class="tag tag-yellow">Electric Vehicles</span>
+                            <span class="tag tag-indigo">Project Management</span>
+                            <span class="tag tag-red">Racing</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-type">Team Leadership</span>
+                            <button class="btn-link">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/coupling.jpg" alt="Coupling Design for Overload Protection" class="project-image">
+                    <div class="project-content">
+                        <h3>Coupling Design for Overload Protection</h3>
+                        <p>Design and development of an innovative coupling system to reduce failures during overload conditions. Focused on improving reliability and preventing mechanical failures in industrial applications.</p>
+                        <div class="project-tags">
+                            <span class="tag tag-teal">Mechanical Design</span>
+                            <span class="tag tag-pink">Failure Analysis</span>
+                            <span class="tag tag-blue">SolidWorks</span>
+                            <span class="tag tag-gray">Industrial Applications</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-type">Engineering Project</span>
+                            <button class="btn-link">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="assets/v6-engine.jpg" alt="6-Cylinder V6 Engine Design" class="project-image">
+                    <div class="project-content">
+                        <h3>6-Cylinder V6 Engine Design</h3>
+                        <p>Comprehensive guided design and modeling of a 6-cylinder V6 engine using SolidWorks. Complete assembly with detailed component design, including pistons, crankshaft, valves, and engine block.</p>
+                        <div class="project-tags">
+                            <span class="tag tag-blue">SolidWorks</span>
+                            <span class="tag tag-emerald">Engine Design</span>
+                            <span class="tag tag-cyan">3D Modeling</span>
+                            <span class="tag tag-violet">Assembly</span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="project-type">Guided Project</span>
+                            <button class="btn-link">View Details →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-footer">
+                <button class="btn btn-primary">View All Projects</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <div class="section-header">
+                <h2>Education & Experience</h2>
+                <p>My academic journey and professional development in mechanical engineering</p>
+            </div>
+
+            <div class="education-content">
+                <div class="education-column">
+                    <h3>Education</h3>
+                    <div class="timeline">
+                        <div class="timeline-item current">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Bachelor of Technology - Mechanical Engineering</h4>
+                                    <span class="timeline-date">📅 2023 - 2026</span>
+                                </div>
+                                <p class="timeline-institution">Kalasalingam Academy of Research and Education</p>
+                                <p class="timeline-description">Currently pursuing B.Tech in Mechanical Engineering with focus on CAD design, topology optimization, and automotive systems. Active member of electric bike racing team and involved in various engineering projects.</p>
+                                <div class="timeline-footer">
+                                    <span class="timeline-info">Current CGPA: 8.45/10</span>
+                                    <span class="badge badge-current">In Progress</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Diploma in Automobile Engineering</h4>
+                                    <span class="timeline-date">📅 2019 - 2022</span>
+                                </div>
+                                <p class="timeline-institution">Ammaiapper Polytechnic College</p>
+                                <p class="timeline-description">Completed diploma in Automobile Engineering with comprehensive study of automotive systems, engines, and mechanical components. Strong foundation in automotive technology and engineering principles.</p>
+                                <div class="timeline-footer">
+                                    <span class="timeline-info">Percentage: 91%</span>
+                                    <span class="badge badge-completed">Completed</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-column">
+                    <h3>Experience</h3>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <h4>Electric Bike Racing Team</h4>
+                                    <span class="timeline-date">📅 2024 - Present</span>
+                                </div>
+                                <p class="timeline-institution">Vice Captain (2025) & Manager (2024)</p>
+                                <p class="timeline-description">Leading team coordination, design optimization, and strategic planning for competitive electric vehicle racing. Managing technical aspects and team performance.</p>
+                                <div class="project-tags">
+                                    <span class="tag tag-orange">Leadership</span>
+                                    <span class="tag tag-yellow">Electric Vehicles</span>
+                                    <span class="tag tag-indigo">Management</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            <div class="certifications">
+                <h3>Certifications & Achievements</h3>
+                <div class="certifications-grid">
+                    <div class="certification-card">
+                        <div class="cert-icon">🏷️</div>
+                        <h4>SolidWorks Professional</h4>
+                        <p>Certified in advanced 3D CAD design</p>
+                    </div>
+                    <div class="certification-card">
+                        <div class="cert-icon">🏆</div>
+                        <h4>Best Project Award</h4>
+                        <p>Department recognition for innovation</p>
+                    </div>
+                    <div class="certification-card">
+                        <div class="cert-icon">🏆</div>
+                        <h4>Dean's List</h4>
+                        <p>Academic excellence recognition</p>
+                    </div>
+                    <div class="certification-card">
+                        <div class="cert-icon">🥈</div>
+                        <h4>CAD Competition</h4>
+                        <p>2nd place in state-level competition</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get In Touch</h2>
+                <p>I'm always open to discussing new opportunities, collaborations, or answering any questions about my work</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">📧</div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <a href="mailto:ryogesh2024@gmail.com">ryogesh2024@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📱</div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 9345773759</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>Chennai, TN, India</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">💼</div>
+                            <div class="contact-details">
+                                <h4>LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/yogesh-ramasubramanian-941453276" target="_blank">View Profile</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="social-links">
+                        <h4>Connect with me</h4>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/yogesh-ramasubramanian-941453276" target="_blank" class="social-icon">💼</a>
+                            <a href="mailto:ryogesh2024@gmail.com" class="social-icon">📧</a>
+                        </div>
+                    </div>
+
+                    <!-- Resume Download -->
+                    <div class="resume-download">
+                        <h4>Download My Resume</h4>
+                        <p>Get a comprehensive overview of my skills, experience, and projects</p>
+                        <button class="btn btn-primary" onclick="downloadResume()">📥 Download PDF Resume</button>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <h3>Send a Message</h3>
+                    
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" placeholder="john.doe@example.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="company">Company/Organization (Optional)</label>
+                            <input type="text" id="company" name="company" placeholder="Your Company">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="job-opportunity">Job Opportunity</option>
+                                <option value="collaboration">Collaboration</option>
+                                <option value="project-inquiry">Project Inquiry</option>
+                                <option value="general">General Question</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" placeholder="Tell me about your project or opportunity..." required></textarea>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="privacy" required>
+                            <label for="privacy">I agree to the privacy policy and consent to having my information stored and processed.</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">📨 Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Yogesh R</h3>
+                    <p>Mechanical Engineering student passionate about innovation, design, and sustainable engineering solutions.</p>
+                    <div class="footer-social">
+                        <a href="https://www.linkedin.com/in/yogesh-ramasubramanian-941453276" target="_blank" class="social-icon">💼</a>
+                        <a href="mailto:ryogesh2024@gmail.com" class="social-icon">📧</a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#education">Education</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <div class="footer-contact">
+                        <p>📧 ryogesh2024@gmail.com</p>
+                        <p>📱 +91 9345773759</p>
+                        <p>📍 Chennai, TN, India</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Yogesh R. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
